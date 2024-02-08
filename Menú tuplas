@@ -1,0 +1,24 @@
+print("MENU")
+print("1-Crear tupla")
+print("2-Buscar elemento")
+print("3-Mostrar tupla")
+print("4-Salir")
+tupla=[]
+while True:
+    op=input("Elige una opción")
+    if op=="1":
+        print("Crear tupla")
+        for i in range(5):
+            d=int(input("Escribe los Números:"))
+            tupla.append(d)
+            lista=tuple(tupla)
+    if op=="2":
+        po=int(input("Escribe el elemento que quieres buscar"))
+        print("El elemento se encuentra en posición",(tupla.index(po)))
+    if op=="3":
+        print(tupla)
+    if op=="4":
+        print("SALIR")
+        break
+else:
+ print("OPCIÓN INCORRECTA")
